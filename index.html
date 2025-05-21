@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aamir Chaudhary | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f5f7fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .header {
+      background: #0d6efd;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 80px; /* Space for profile image */
+    }
+    .profile-img-container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: absolute;
+      top: -80px; /* Half outside the header */
+    }
+    @media (max-width: 576px) {
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        top: -60px; /* Adjusted for smaller image */
+      }
+      .header {
+        margin-bottom: 70px; /* Adjusted for smaller image */
+      }
+    }
+    .section-title {
+      border-left: 4px solid #0d6efd;
+      padding-left: 10px;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .project-list a {
+      text-decoration: none;
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0d6efd;
+      color: white;
+      margin-top: 3rem;
+    }
+    .content-wrapper {
+      position: relative;
+    }
+    .certificate-link {
+      cursor: pointer;
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .certificate-link:hover {
+      text-decoration: underline;
+    }
+    .modal-img {
+      max-height: 80vh;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Aamir Chaudhary</h1>
+    <p>B.Tech - Information Technology | DIT University, Dehradun</p>
+  </div>
+
+  <div class="container content-wrapper">
+    <div class="profile-img-container">
+      <img src="image/1723485703644.png" alt="Profile Picture" class="profile-img">
+    </div>
+
+    <div style="padding-top: 80px;">
+      <p class="text-center">💡 Aspiring Java & Web Developer | Final Year B.Tech (IT) Student | Open to Opportunities</p>
+
+      <div class="section-title">💻 Projects</div>
+      <ul class="list-group project-list mb-4">
+        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Employee-Management-System-Desktop-Version.git" target="_blank">Employee Management System (Desktop Version)</a></li>
+        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Employee-Management-System-web-Version.git" target="_blank">Employee Management System (Web Version)</a></li>
+        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Amazon-Clone-Web-Page.git" target="_blank">Amazon Clone Web Page</a></li>
+        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/PGlife.git" target="_blank">PG Life Website</a></li>
+        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Email-Project.git" target="_blank">Email Sender Desktop App</a></li>
+        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Snake-game.git" target="_blank">Snake Game (Java)</a></li>
+      </ul>
+
+      <div class="section-title">🧠 Skills & Tools</div>
+      <p>
+        <strong>Languages/Tech:</strong> Java, HTML5, CSS3, JavaScript, Bootstrap 5, React, PHP<br>
+        <strong>Database:</strong> MySQL<br>
+        <strong>Tools:</strong> NetBeans, VS Code, Git, GitHub<br>
+        <strong>Concepts:</strong> DBMS, Networking, AI in Web Dev
+      </p>
+
+      <div class="section-title">🎓 Education</div>
+      <ul>
+        <li>B.Tech – Information Technology, DIT University (2021–2025) – CGPA: 8.07</li>
+        <li>Diploma – Computer Science, SRMU, Lucknow – 78.60%</li>
+      </ul>
+
+      <div class="section-title">🏅 Certifications & Internships</div>
+      <ul class="certificate-list">
+        <li>
+          <span class="certificate-link" onclick="showCertificate('certificates/skartia-certificate.jpg', 'Java Developer Trainee Certificate')">
+            Java Developer Trainee at Skartia Pvt. Ltd.
+          </span>
+          <span class="ms-1">🖼️</span>
+        </li>
+        <li>
+          <span class="certificate-link" onclick="showCertificate('certificates/networking-certificate.jpg', 'Hardware Networking Certificate')">
+            Diplomatic Course – Hardware Networking
+          </span>
+          <span class="ms-1">🖼️</span>
+        </li>
+        <li>
+          <span class="certificate-link" onclick="showCertificate('certificates/webdev-certificate.pdf', 'Web Development Certificate')">
+            Certified Web Development Course by IIT Roorkee & Internshala
+          </span>
+          <span class="ms-1">📄</span>
+        </li>
+      </ul>
+
+      <div class="section-title">📬 Contact</div>
+      <ul>
+        <li>Email: <a href="mailto:aamirchaudhary78600@gmail.com">aamirchaudhary78600@gmail.com</a></li>
+        <li>Email: <a href="mailto:1000016812@dit.edu.in">1000016812@dit.edu.in</a></li>
+        <li>Phone: +91-9125819327 / +977-9805441433</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/aamir-chaudhary-2542411b7" target="_blank">linkedin.com/in/aamir-chaudhary</a></li>
+        <li>GitHub: <a href="https://github.com/Aamir-Chaudhary" target="_blank">github.com/Aamir-Chaudhary</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Certificate Modal -->
+  <div class="modal fade" id="certificateModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Certificate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <iframe id="pdfViewer" style="display:none; width:100%; height:500px;" frameborder="0"></iframe>
+          <img id="modalImage" class="img-fluid modal-img" alt="Certificate" style="display:none;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a id="downloadBtn" href="#" class="btn btn-primary" download>Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 Aamir Chaudhary | All rights reserved
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    function showCertificate(filePath, title) {
+      const modal = new bootstrap.Modal(document.getElementById('certificateModal'));
+      const modalTitle = document.getElementById('modalTitle');
+      const modalImage = document.getElementById('modalImage');
+      const pdfViewer = document.getElementById('pdfViewer');
+      const downloadBtn = document.getElementById('downloadBtn');
+      
+      modalTitle.textContent = title;
+      downloadBtn.href = filePath;
+      
+      // Check if file is PDF
+      if (filePath.toLowerCase().endsWith('.pdf')) {
+        pdfViewer.style.display = 'block';
+        modalImage.style.display = 'none';
+        pdfViewer.src = filePath;
+      } else {
+        // It's an image
+        pdfViewer.style.display = 'none';
+        modalImage.style.display = 'block';
+        modalImage.src = filePath;
+        modalImage.alt = title;
+      }
+      
+      modal.show();
+    }
+  </script>
+</body>
+</html>
