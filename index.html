@@ -1,209 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aamir Chaudhary | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background: #f5f7fa;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .header {
-      background: #0d6efd;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      margin-bottom: 80px; /* Space for profile image */
-    }
-    .profile-img-container {
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 4px solid white;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      position: absolute;
-      top: -80px; /* Half outside the header */
-    }
-    @media (max-width: 576px) {
-      .profile-img {
-        width: 120px;
-        height: 120px;
-        top: -60px; /* Adjusted for smaller image */
-      }
-      .header {
-        margin-bottom: 70px; /* Adjusted for smaller image */
-      }
-    }
-    .section-title {
-      border-left: 4px solid #0d6efd;
-      padding-left: 10px;
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-    .project-list a {
-      text-decoration: none;
-    }
-    .footer {
-      text-align: center;
-      padding: 1rem;
-      background: #0d6efd;
-      color: white;
-      margin-top: 3rem;
-    }
-    .content-wrapper {
-      position: relative;
-    }
-    .certificate-link {
-      cursor: pointer;
-      color: #0d6efd;
-      text-decoration: none;
-    }
-    .certificate-link:hover {
-      text-decoration: underline;
-    }
-    .modal-img {
-      max-height: 80vh;
-      width: auto;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aamir Chaudhary | Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  <div class="header">
-    <h1>Aamir Chaudhary</h1>
-    <p>B.Tech - Information Technology | DIT University, Dehradun</p>
-  </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<div class="container">
+<a class="navbar-brand fw-bold">Aamir</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-  <div class="container content-wrapper">
-    <div class="profile-img-container">
-      <img src="image/1723485703644.png" alt="Profile Picture" class="profile-img">
-    </div>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+<li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
 
-    <div style="padding-top: 80px;">
-      <p class="text-center">💡 Aspiring Java & Web Developer | Final Year B.Tech (IT) Student | Open to Opportunities</p>
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<img src="image/1723485703644.png">
+<h1 class="fw-bold">Aamir Chaudhary</h1>
+<h5 class="gradient-text">
+<span id="typing">B.tech IT | Java & Web Developer |</span>
+</h5>
+<p class="mt-3">Building web & dextop Application with modern web technologies( Java, Html, Css, Bootstrap, JavaScript, React,  MySQ ,Git,Github)</p>
+<a href="#projects" class="btn btn-light mt-3 px-4">View My Work</a>
+</div>
+</section>
+<!-- ABOUT -->
+<section id="about" class="section">
+<div class="container">
 
-      <div class="section-title">💻 Projects</div>
-      <ul class="list-group project-list mb-4">
-       
-        <li class="list-group-item"><a href="https://aamir-chaudhary.github.io/Aamir-s-eatery-Food/" target="_blank">Food ordering website (Aamir's Eatery)</a></li>
-        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Employee-Management-System-Desktop-Version.git" target="_blank">Employee Management System (Desktop Version)</a></li>
-        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Employee-Management-System-web-Version.git" target="_blank">Employee Management System (Web Version)</a></li>
-        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Amazon-Clone-Web-Page.git" target="_blank">Amazon Clone Web Page</a></li>
-        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/PGlife.git" target="_blank">PG Life Website</a></li>
-        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Email-Project.git" target="_blank">Email Sender Desktop App</a></li>
-        <li class="list-group-item"><a href="https://github.com/Aamir-Chaudhary/Snake-game.git" target="_blank">Snake Game (Java)</a></li>
-      </ul>
+<h2 class="section-title">👨‍💻 About Me</h2>
 
-      <div class="section-title">🧠 Skills & Tools</div>
-      <p>
-        <strong>Languages/Tech:</strong> Java, HTML5, CSS3, JavaScript, Bootstrap 5, React, PHP<br>
-        <strong>Database:</strong> MySQL<br>
-        <strong>Tools:</strong> NetBeans, VS Code, Git, GitHub<br>
-        <strong>Concepts:</strong> DBMS, Networking, AI in Web Dev
-      </p>
+<div class="row align-items-center g-5">
 
-      <div class="section-title">🎓 Education</div>
-      <ul>
-        <li>B.Tech – Information Technology, DIT University (2021–2025) – CGPA: 8.07</li>
-        <li>Diploma – Computer Science, SRMU, Lucknow – 78.60%</li>
-      </ul>
+<!-- IMAGE SIDE -->
+<div class="col-lg-5 text-center reveal">
+<img src="image/1723485703644.png" class="img-fluid rounded-4 shadow" style="max-width:300px;">
+</div>
 
-      <div class="section-title">🏅 Certifications & Internships</div>
-      <ul class="certificate-list">
-       
-        <li>
-          <span class="certificate-link" onclick="showCertificate('certificates/Aamir Chaudhary_240823_213920 (1).pdf', 'Web Development Certificate')">
-            Certified Web Development Course by IIT Roorkee
-          </span>
-          <span class="ms-1">📄</span>
-        </li>
-         <li>
-          <span class="certificate-link" onclick="showCertificate('certificates/31f489ee-7151-4cde-8dc6-5c6bb0590241.jpeg', 'Java Developer Trainee Certificate')">
-            Java Developer Trainee at Skartia Pvt. Ltd.
-          </span>
-          <span class="ms-1">🖼️</span>
-        </li> <li>
-          <span class="certificate-link" onclick="showCertificate('certificates/40e27f45-9a2f-4c1c-be77-70260a561cf7.jpeg', 'Hardware Networking Certificate')">
-            Diplomatic Course – Hardware Networking
-          </span>
-          <span class="ms-1">🖼️</span>
-        </li>
-        
-      </ul>
+<!-- TEXT SIDE -->
+<div class="col-lg-7 reveal">
 
-      <div class="section-title">📬 Contact</div>
-      <ul>
-        <li>Email: <a href="mailto:aamirchaudhary78600@gmail.com">aamirchaudhary78600@gmail.com</a></li>
-        <li>Email: <a href="mailto:1000016812@dit.edu.in">1000016812@dit.edu.in</a></li>
-        <li>Phone: +91-9125819327 / +977-9805441433</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/aamir-chaudhary-2542411b7" target="_blank">linkedin.com/in/aamir-chaudhary</a></li>
-        <li>GitHub: <a href="https://github.com/Aamir-Chaudhary" target="_blank">github.com/Aamir-Chaudhary</a></li>
-      </ul>
-    </div>
-  </div>
+<div class="glass">
 
-  <!-- Certificate Modal -->
-  <div class="modal fade" id="certificateModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalTitle">Certificate</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <iframe id="pdfViewer" style="display:none; width:100%; height:500px;" frameborder="0"></iframe>
-          <img id="modalImage" class="img-fluid modal-img" alt="Certificate" style="display:none;">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a id="downloadBtn" href="#" class="btn btn-primary" download>Download</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<h4 class="mb-3 gradient-text">Who I Am</h4>
+<p>
+I am a passionate <strong>Java & Web Developer</strong> with a B.Tech in Information Technology (2025), building real-world web  and desktop applications.  
+I have hands-on experience developing <strong>full-stack web applications, Java desktop applications, and responsive websites</strong> using modern technologies.
+</p>
 
-  <div class="footer">
-    © 2025 Aamir Chaudhary | All rights reserved
-  </div>
+<p>
+My projects include <strong>food ordering web application (live)</strong>,<strong>Employee Management Systems</strong> (desktop & web), and interactive mini web apps that solve practical problems.  
+I also work extensively with <strong> Java, Html, Css, Bootstrap5, JavaScript, React, MySQL, Firebase, JSP, Servlets, Swing, Awt </strong>.
+</p>
+<h5 class="mt-4 mb-3">🚀 What I Do</h5>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <script>
-    function showCertificate(filePath, title) {
-      const modal = new bootstrap.Modal(document.getElementById('certificateModal'));
-      const modalTitle = document.getElementById('modalTitle');
-      const modalImage = document.getElementById('modalImage');
-      const pdfViewer = document.getElementById('pdfViewer');
-      const downloadBtn = document.getElementById('downloadBtn');
-      
-      modalTitle.textContent = title;
-      downloadBtn.href = filePath;
-      
-      // Check if file is PDF
-      if (filePath.toLowerCase().endsWith('.pdf')) {
-        pdfViewer.style.display = 'block';
-        modalImage.style.display = 'none';
-        pdfViewer.src = filePath;
-      } else {
-        // It's an image
-        pdfViewer.style.display = 'none';
-        modalImage.style.display = 'block';
-        modalImage.src = filePath;
-        modalImage.alt = title;
-      }
-      
-      modal.show();
-    }
-  </script>
+<ul>
+<li>✔ Build Full Stack Web Applications </li>
+<li>✔ Build Web Applications and AI integration in projects</li>
+<li>✔ Create Responsive and Interactive UIs with HTML, CSS, Bootstrap, and JavaScript, React</li>
+<li>✔ Develop Java Desktop Applications using Swing,Awt</li>
+<li>✔ Design and manage databases using MySQL and Firebase for efficient data handling</li>
+<li>✔ Solve DSA & Logic Problems</li>
+</ul>
+
+<h5 class="mt-4 mb-3">🎯 Career Goal</h5>
+
+<p>
+I aim to work as a professional Software Engineer, creating <strong>scalable, efficient, and impactful applications</strong> that serve real-world users worldwide.
+</p>
+
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+<div class="container">
+<h2 class="section-title">💻 Projects</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4 reveal">
+<div class="glass project-card h-100">
+<h5>Aamir Foods</h5>
+<p>a modern and responsive food ordering website built using HTML, CSS, and Bootstrap 5,JavaScript and Google fireBase for backend.</p>
+<a href="https://aamir-chaudhary.github.io/Aamir-s-eatery-Food/" target="_blank" class="btn btn-primary btn-sm">Visit Website</a>
+<a href="https://github.com/Aamir-Chaudhary/Aamir-s-eatery-Food" target="_blank" class="btn btn-primary btn-sm">View Code</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="glass project-card h-100">
+<h5>Employee Management System</h5>
+<p>Desktop + Web version using Java, MySQL, HTML, CSS, JS</p>
+<a href="https://github.com/Aamir-Chaudhary" target="_blank" class="btn btn-primary btn-sm">View Code</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="glass project-card h-100">
+<h5>Amazon Clone</h5>
+<p>Responsive ecommerce UI clone using HTML, CSS, JS</p>
+<a href="https://aamir-chaudhary.github.io/Amazon-Clone-Web-Page/" class="btn btn-primary btn-sm">Visit WebPage</a>
+<a href="https://github.com/Aamir-Chaudhary/Amazon-Clone-Web-Page" class="btn btn-primary btn-sm">View Code</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="glass project-card h-100">
+<h5>Rock Paper Scissor</h5>
+<p>Interactive Rock Paper Scissors browser game demonstrating DOM manipulation, event handling built using (HTML, CSS, and JavaScript).</p>
+<a href="https://aamir-chaudhary.github.io/Rock-Paper-Scissor-/" class="btn btn-primary btn-sm">Visit webApp</a>
+<a href="https://github.com/Aamir-Chaudhary/Rock-Paper-Scissor-" class="btn btn-primary btn-sm">View Code</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="glass project-card h-100">
+<h5>Tic Toc toe</h5>
+<p>A lightweight, responsive, and interactive Tic Tac Toe game built using the classic web stack (HTML, CSS, and JavaScript).</p>
+<a href="https://aamir-chaudhary.github.io/tic-toc-toe-game/" class="btn btn-primary btn-sm">Visit webApp</a>
+<a href="https://github.com/Aamir-Chaudhary/tic-toc-toe-game" class="btn btn-primary btn-sm">View Code</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="glass project-card h-100">
+<h5>PG Life Website</h5>
+<p>Full UI layout with modern components</p>
+<a href="https://github.com/Aamir-Chaudhary" class="btn btn-primary btn-sm">View Code</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section bg-dark">
+<div class="container">
+<h2 class="section-title">🧠 Skills</h2>
+
+<div class="text-center reveal">
+<span class="skill-badge">Html</span>
+<span class="skill-badge">Css3</span>
+<span class="skill-badge">Bootstrap5</span>
+<span class="skill-badge">JavaScript</span>
+<span class="skill-badge">React</span>
+<span class="skill-badge">MySQL</span>
+<span class="skill-badge">DBMS</span>
+<span class="skill-badge">Git & Github</span>
+<span class="skill-badge">Java</span>
+<span class="skill-badge">AI integration</span>
+</div>
+
+</div>
+</section>
+
+
+<button id="topBtn" class="btn btn-primary rounded-circle px-3 py-2"></button>
+↑
+<!-- RESUME -->
+<section id="resume" class="section">
+<div class="container text-center">
+
+<h2 class="section-title">📄 Resume</h2>
+
+<div class="row justify-content-center">
+<div class="col-lg-6 reveal">
+
+<div class="glass">
+
+<h4 class="gradient-text mb-3">My Resume</h4>
+
+<p>
+Download my latest resume to know more about my skills, projects and experience.
+</p>
+
+<a href="Resume/MyResume.pdf" download class="btn btn-primary btn-lg mt-3">
+⬇ Download Resume
+</a>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section bg-dark">
+<div class="container">
+
+<h2 class="section-title">🏅 Certificates</h2>
+
+<div class="row g-4">
+
+
+    <!-- CERTIFICATE 1 -->
+<div class="col-md-4 reveal">
+<div class="glass text-center certificate-card"
+onclick="openCertificate('certificates/web development certificate.jpeg','Web Development Certification')">
+
+<img src="certificates/web development certificate.jpeg"
+class="img-fluid rounded mb-3" style="height:150px">
+
+<h6>Web Development</h6>
+<p class="text-muted">IIT Roorkee + Internshala</p>
+
+</div>
+</div>
+
+<!-- CERTIFICATE 2 -->
+<div class="col-md-4 reveal">
+<div class="glass text-center certificate-card"
+onclick="openCertificate('certificates/31f489ee-7151-4cde-8dc6-5c6bb0590241.jpeg','Java Developer Trainee')">
+
+<img src="certificates/31f489ee-7151-4cde-8dc6-5c6bb0590241.jpeg"
+class="img-fluid rounded mb-3">
+
+<h6>Java Developer Trainee</h6>
+<p class="text-muted">Skartia Pvt Ltd</p>
+
+</div>
+</div>
+
+<!-- CERTIFICATE 3 -->
+<div class="col-md-4 reveal">
+<div class="glass text-center certificate-card"
+onclick="openCertificate('certificates/40e27f45-9a2f-4c1c-be77-70260a561cf7.jpeg','Hardware Networking')">
+
+<img src="certificates/40e27f45-9a2f-4c1c-be77-70260a561cf7.jpeg"
+class="img-fluid rounded mb-3">
+
+<h6>Hardware Networking</h6>
+<p class="text-muted">Diploma Course</p>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CERTIFICATE MODAL -->
+<div class="modal fade" id="certModal">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content bg-dark text-white">
+
+<div class="modal-header border-0">
+<h5 id="certTitle"></h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body text-center">
+<iframe id="certPdf" style="width:100%;height:500px;display:none"></iframe>
+<img id="certImg" class="img-fluid rounded" style="display:none">
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<div class="container text-center">
+<h2 class="section-title">📬 Contact</h2>
+
+<div class="glass reveal">
+<p>Email: aamirchaudhary78600@gmail.com</p>
+<p>Phone: +977-9805441433</p>
+
+<a href="https://linkedin.com" class="btn btn-primary m-2">LinkedIn</a>
+<a href="https://github.com/Aamir-Chaudhary" class="btn btn-light m-2">GitHub</a>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+© 2026 Aamir Chaudhary | Portfolio
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SCROLL ANIMATION -->
+<script>
+
+// TYPING EFFECT
+const text = "  Full Stack Developer Problem Solver";
+let i = 0;
+
+function typing(){
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typing, 60);
+}
+}
+typing();
+
+// SCROLL REVEAL (SMOOTHER)
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("active");
+}
+});
+});
+
+document.querySelectorAll(".reveal").forEach(el=>{
+observer.observe(el);
+});
+
+// BACK TO TOP BUTTON
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop > 300){
+topBtn.style.display = "block";
+}else{
+topBtn.style.display = "none";
+}
+};
+
+topBtn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+
+// NAVBAR ACTIVE LINK
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", ()=>{
+let current = "";
+
+sections.forEach(section=>{
+const sectionTop = section.offsetTop;
+if(pageYOffset >= sectionTop - 200){
+current = section.getAttribute("id");
+}
+});
+
+navLinks.forEach(link=>{
+link.classList.remove("active");
+if(link.getAttribute("href") === "#" + current){
+link.classList.add("active");
+}
+});
+});
+
+</script>
+<script>
+
+function openCertificate(path,title){
+
+const modal = new bootstrap.Modal(document.getElementById('certModal'));
+const pdf = document.getElementById("certPdf");
+const img = document.getElementById("certImg");
+const titleText = document.getElementById("certTitle");
+
+titleText.innerText = title;
+
+if(path.endsWith(".pdf")){
+pdf.style.display="block";
+img.style.display="none";
+pdf.src = path;
+}else{
+img.style.display="block";
+pdf.style.display="none";
+img.src = path;
+}
+
+modal.show();
+}
+
+</script>
+
 </body>
 </html>
